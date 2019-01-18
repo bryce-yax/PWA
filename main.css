@@ -1,0 +1,35 @@
+#history {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.pokemon_item {
+    margin: 10px;
+    width: 250px;
+}
+
+.pokemon_item img {
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+}
+
+.pokemon_item_history {
+    margin-right: 10px;
+    border: black 1px dashed;
+    display: block;
+    padding: 0px 10px 1px 10px;
+}
+
+h4.pokemon_name_history {
+    font-family: fantasy;
+    font-weight: 100;
+    -webkit-font-smoothing: subpixel-antialiased;
+    margin: 6px;
+
+}
+
+img.pokemon_image_history {
+    height: 14rem;
+}
