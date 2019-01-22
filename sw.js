@@ -3,10 +3,10 @@ const CACHE_NAME = "V1";
 this.addEventListener('install', async function(){
     const cache = await caches.open(CACHE_NAME);
     cache.addAll([
-        '/components/utilities/PWA//home.html',
-        '/components/utilities/PWA//main.css',
-        '/components/utilities/PWA//main.js',
-        '/components/utilities/PWA//history.html',
+        '/components/utilities/PWA/home.html',
+        '/components/utilities/PWA/main.css',
+        '/components/utilities/PWA/main.js',
+        '/components/utilities/PWA/history.html',
     ]);
 });
 
