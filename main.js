@@ -75,21 +75,22 @@ function updateCache(pokemon) {
 
 async function onOkButtonClickAsync() {
     let pokemonName = document.querySelector("#pokemon_name_input").value;
-    try {
-        const response = await fetch(API_pokemon + pokemonName);
-        if (!response.ok) {
-            return;
-        }
-        let pokemon = await response.json();
+
+    var networkUpdate = fetch(API_pokemon + pokemonName).then(function(response){
+        return response.json();
+    }).then(function(data){
+        let pokemon = data;
         document.querySelector('#apiSelection').innerHTML = buildSelectionMarkup(pokemon, API_pokemon + pokemonName);
-    } catch (err) {
-        caches.match('https://api.pokemontcg.io/v1/cards?name=' + pokemonName).then(function(response){
-            return response.json();
-        }).then(function(data){
-            document.querySelector('#apiSelection').innerHTML = buildpokemonMarkup(data);
-        });
-        //console.error(`error ${err}`);
-    }
+    });
+
+    caches.match(API_pokemon + pokemonName).then(function(response){
+        if(!response) throw Error("No Data");
+        return response.json();
+    }).then(function(data){
+        document.querySelector('#apiSelection').innerHTML = buildpokemonMarkup(data);
+    }).catch(function(){
+        return "errors";
+    });
 }
 
 function getLocalHistsory() {
