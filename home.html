@@ -13,6 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>PWA Test</title>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="main.js"></script>
 </head>
 <body onload="onLoadAsync()">
@@ -20,13 +21,18 @@
         <input id="pokemon_name_input" placeholder="Pokemon Name" />
         <button id="ok_button" onclick="onOkButtonClickAsync()">OK</button>
     </div>
+    <div id="apiSelection">
+        
+    </div>
     <div id="main_pokemon">
         
     </div>
-    <h1>History</h1>
-    <div id="history">
-        
+    <div class='mainHistory'>
+        <h1>History</h1>
+        <div id="history">
+            
+        </div>
+        <a href="history.html">View Full History</a>
     </div>
-    <a href="history.html">View Full History</a>
 </body>
 </html>

@@ -1,29 +1,28 @@
 {
-    "name": "PWA Pokemon API Test",
-    "short_name": "PWA Test",
-    "description": "PWA Test application using Pokemon TCG API",
-    "lang": "en-US",
-    "start_url": "/components/utilities/PWA/",
-    "scope" : "/components/utilities/PWA/",
-    "display": "standalone",
-    "theme_color": "#42adf4",
-    "background_color" : "#42adf4",
-    "icons": [
-      {
-        "src": "Icons/red-team-64.png",
-        "sizes": "64x64"
-      },
-      {
-        "src": "Icons/red-team-128.png",
-        "sizes": "128x128"
-      },
-      {
-        "src": "Icons/red-team-256.png",
-        "sizes": "256x256"
-      },
-      {
-        "src": "Icons/red-team-512.png",
-        "sizes": "512x512"
-      }
-    ]
-  }
+  "name": "PWA Pokemon API Test",
+  "short_name": "PWA Test",
+  "description": "PWA Test application using Pokemon TCG API",
+  "lang": "en-US",
+  "start_url" : "/home.html",
+  "display": "standalone",
+  "theme_color": "#42adf4",
+  "background_color" : "#42adf4",
+  "icons": [
+    {
+      "src": "Icons/red-team-64.png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "Icons/red-team-128.png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "Icons/red-team-256.png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "Icons/red-team-512.png",
+      "sizes": "512x512"
+    }
+  ]
+}
